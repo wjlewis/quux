@@ -1,13 +1,31 @@
-body {
+html,
+body,
+#root {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.graph {
+  border: 1px solid #444;
+  box-sizing: border-box;
+}
+
+.graph svg {
+  display: block;
+}
+
+.graph,
+.graph svg {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  box-sizing: border-box;
+  border: 1px solid #aaa;
+  width: 80%;
+  height: 80%;
+  margin: 10%;
 }
